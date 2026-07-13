@@ -66,7 +66,7 @@
                                         </td>
                                         <td><span t-field="line.name"/></td>
                                         <td class="text-end"><span t-field="line.product_uom_qty"/></td>
-                                        <td class="text-start"><span t-field="line.product_uom"/></td>
+                                        <td class="text-start"><span t-field="line.product_uom_id"/></td>
                                         <td class="text-end"><span t-field="line.price_unit"/></td>
                                         <td class="text-end">
                                             <span t-field="line.price_subtotal"
