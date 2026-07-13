@@ -59,10 +59,8 @@
                                     </tr>
                                     <tr t-elif="not line.display_type">
                                         <td class="text-center">
-                                            <img t-if="line.line_image"
-                                                 t-att-src="image_data_uri(line.line_image)"
-                                                 style="max-height:70px; max-width:100%;"
-                                                 alt="Foto"/>
+                                            <span t-if="line.line_image" t-field="line.line_image"
+                                                  t-options="{'widget': 'image', 'style': 'max-height:70px; max-width:100%;'}"/>
                                         </td>
                                         <td><span t-field="line.name"/></td>
                                         <td class="text-end"><span t-field="line.product_uom_qty"/></td>
